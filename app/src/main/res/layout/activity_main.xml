@@ -15,6 +15,7 @@
         android:layout_marginStart="48dp"
         android:layout_marginTop="60dp"
         android:background="@drawable/resistor1"
+        android:contentDescription="@string/selec_color"
         android:scaleType="centerCrop"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -26,6 +27,7 @@
         android:layout_marginStart="236dp"
         android:layout_marginTop="67dp"
         android:background="@drawable/neutralcolor"
+        android:contentDescription="@string/selec_color"
         android:scaleType="centerCrop"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -37,6 +39,7 @@
         android:layout_marginStart="198dp"
         android:layout_marginTop="67dp"
         android:background="@drawable/neutralcolor"
+        android:contentDescription="@string/selec_color"
         android:scaleType="centerCrop"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -48,6 +51,7 @@
         android:layout_marginStart="177dp"
         android:layout_marginTop="67dp"
         android:background="@drawable/neutralcolor"
+        android:contentDescription="@string/selec_color"
         android:scaleType="centerCrop"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -59,6 +63,7 @@
         android:layout_marginStart="157dp"
         android:layout_marginTop="67dp"
         android:background="@drawable/neutralcolor"
+        android:contentDescription="@string/selec_color"
         android:scaleType="centerCrop"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -81,6 +86,7 @@
         android:layout_height="458dp"
         android:layout_marginTop="210dp"
         android:background="#3A3737"
+        android:baselineAligned="false"
         android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -97,6 +103,7 @@
                 android:layout_height="26dp"
                 android:layout_marginStart="25.6dp"
                 android:layout_marginTop="36dp"
+                android:contentDescription="@string/selec_color"
                 android:background="@drawable/browncolor" />
 
             <ImageButton
@@ -105,6 +112,7 @@
                 android:layout_height="26dp"
                 android:layout_marginStart="25.6dp"
                 android:layout_marginTop="10dp"
+                android:contentDescription="@string/selec_color"
                 android:background="@drawable/redcolor" />
 
             <ImageButton
@@ -113,6 +121,7 @@
                 android:layout_height="26dp"
                 android:layout_marginStart="25.6dp"
                 android:layout_marginTop="10dp"
+                android:contentDescription="@string/selec_color"
                 android:background="@drawable/orangecolor" />
 
             <ImageButton
@@ -121,6 +130,7 @@
                 android:layout_height="26dp"
                 android:layout_marginStart="25.6dp"
                 android:layout_marginTop="10dp"
+                android:contentDescription="@string/selec_color"
                 android:background="@drawable/yellowcolor" />
 
             <ImageButton
@@ -129,6 +139,7 @@
                 android:layout_height="26dp"
                 android:layout_marginStart="25.6dp"
                 android:layout_marginTop="10dp"
+                android:contentDescription="@string/selec_color"
                 android:background="@drawable/greencolor" />
 
             <ImageButton
@@ -137,6 +148,7 @@
                 android:layout_height="26dp"
                 android:layout_marginStart="25.6dp"
                 android:layout_marginTop="10dp"
+                android:contentDescription="@string/selec_color"
                 android:background="@drawable/bluecolor" />
 
             <ImageButton
@@ -145,6 +157,7 @@
                 android:layout_height="26dp"
                 android:layout_marginStart="25.6dp"
                 android:layout_marginTop="10dp"
+                android:contentDescription="@string/selec_color"
                 android:background="@drawable/purplecolor" />
 
             <ImageButton
@@ -153,6 +166,7 @@
                 android:layout_height="26dp"
                 android:layout_marginStart="25.6dp"
                 android:layout_marginTop="10dp"
+                android:contentDescription="@string/selec_color"
                 android:background="@drawable/graycolor" />
 
             <ImageButton
@@ -161,6 +175,7 @@
                 android:layout_height="26dp"
                 android:layout_marginStart="25.6dp"
                 android:layout_marginTop="10dp"
+                android:contentDescription="@string/selec_color"
                 android:background="@drawable/whitecolor" />
 
         </LinearLayout>
@@ -177,6 +192,7 @@
                 android:layout_height="26dp"
                 android:layout_marginStart="25.6dp"
                 android:background="@drawable/blackcolor"
+                android:contentDescription="@string/selec_color"
                 android:scaleType="centerCrop" />
 
             <ImageButton
@@ -185,6 +201,7 @@
                 android:layout_height="26dp"
                 android:layout_marginStart="25.6dp"
                 android:layout_marginTop="10dp"
+                android:contentDescription="@string/selec_color"
                 android:background="@drawable/browncolor" />
 
             <ImageButton
@@ -193,6 +210,7 @@
                 android:layout_height="26dp"
                 android:layout_marginStart="25.6dp"
                 android:layout_marginTop="10dp"
+                android:contentDescription="@string/selec_color"
                 android:background="@drawable/redcolor" />
 
             <ImageButton
@@ -201,6 +219,7 @@
                 android:layout_height="26dp"
                 android:layout_marginStart="25.6dp"
                 android:layout_marginTop="10dp"
+                android:contentDescription="@string/selec_color"
                 android:background="@drawable/orangecolor" />
 
             <ImageButton
@@ -209,6 +228,7 @@
                 android:layout_height="26dp"
                 android:layout_marginStart="25.6dp"
                 android:layout_marginTop="10dp"
+                android:contentDescription="@string/selec_color"
                 android:background="@drawable/yellowcolor" />
 
             <ImageButton
@@ -217,6 +237,7 @@
                 android:layout_height="26dp"
                 android:layout_marginStart="25.6dp"
                 android:layout_marginTop="10dp"
+                android:contentDescription="@string/selec_color"
                 android:background="@drawable/greencolor" />
 
             <ImageButton
@@ -225,6 +246,7 @@
                 android:layout_height="26dp"
                 android:layout_marginStart="25.6dp"
                 android:layout_marginTop="10dp"
+                android:contentDescription="@string/selec_color"
                 android:background="@drawable/bluecolor" />
 
             <ImageButton
@@ -233,6 +255,7 @@
                 android:layout_height="26dp"
                 android:layout_marginStart="25.6dp"
                 android:layout_marginTop="10dp"
+                android:contentDescription="@string/selec_color"
                 android:background="@drawable/purplecolor" />
 
             <ImageButton
@@ -241,6 +264,7 @@
                 android:layout_height="26dp"
                 android:layout_marginStart="25.6dp"
                 android:layout_marginTop="10dp"
+                android:contentDescription="@string/selec_color"
                 android:background="@drawable/graycolor" />
 
             <ImageButton
@@ -249,9 +273,8 @@
                 android:layout_height="26dp"
                 android:layout_marginStart="25.6dp"
                 android:layout_marginTop="10dp"
+                android:contentDescription="@string/selec_color"
                 android:background="@drawable/whitecolor" />
-
-
 
 
         </LinearLayout>
@@ -267,6 +290,7 @@
                 android:layout_width="56dp"
                 android:layout_height="26dp"
                 android:layout_marginStart="25.6dp"
+                android:contentDescription="@string/selec_color"
                 android:background="@drawable/blackcolor" />
 
             <ImageButton
@@ -275,6 +299,7 @@
                 android:layout_height="26dp"
                 android:layout_marginStart="25.6dp"
                 android:layout_marginTop="10dp"
+                android:contentDescription="@string/selec_color"
                 app:srcCompat="@drawable/browncolor" />
 
             <ImageButton
@@ -283,6 +308,7 @@
                 android:layout_height="26dp"
                 android:layout_marginStart="25.6dp"
                 android:layout_marginTop="10dp"
+                android:contentDescription="@string/selec_color"
                 android:background="@drawable/redcolor" />
 
             <ImageButton
@@ -291,6 +317,7 @@
                 android:layout_height="26dp"
                 android:layout_marginStart="25.6dp"
                 android:layout_marginTop="10dp"
+                android:contentDescription="@string/selec_color"
                 app:srcCompat="@drawable/orangecolor" />
 
             <ImageButton
@@ -299,6 +326,7 @@
                 android:layout_height="26dp"
                 android:layout_marginStart="25.6dp"
                 android:layout_marginTop="10dp"
+                android:contentDescription="@string/selec_color"
                 app:srcCompat="@drawable/yellowcolor" />
 
             <ImageButton
@@ -307,6 +335,7 @@
                 android:layout_height="26dp"
                 android:layout_marginStart="25.6dp"
                 android:layout_marginTop="10dp"
+                android:contentDescription="@string/selec_color"
                 app:srcCompat="@drawable/greencolor" />
 
             <ImageButton
@@ -315,6 +344,7 @@
                 android:layout_height="26dp"
                 android:layout_marginStart="25.6dp"
                 android:layout_marginTop="10dp"
+                android:contentDescription="@string/selec_color"
                 app:srcCompat="@drawable/bluecolor" />
 
             <ImageButton
@@ -323,6 +353,7 @@
                 android:layout_height="26dp"
                 android:layout_marginStart="25.6dp"
                 android:layout_marginTop="10dp"
+                android:contentDescription="@string/selec_color"
                 app:srcCompat="@drawable/purplecolor" />
 
             <ImageButton
@@ -331,6 +362,7 @@
                 android:layout_height="26dp"
                 android:layout_marginStart="25.6dp"
                 android:layout_marginTop="10dp"
+                android:contentDescription="@string/selec_color"
                 app:srcCompat="@drawable/graycolor" />
 
             <ImageButton
@@ -339,6 +371,7 @@
                 android:layout_height="26dp"
                 android:layout_marginStart="25.6dp"
                 android:layout_marginTop="10dp"
+                android:contentDescription="@string/selec_color"
                 app:srcCompat="@drawable/whitecolor" />
 
             <ImageButton
@@ -347,6 +380,7 @@
                 android:layout_height="26dp"
                 android:layout_marginStart="25.6dp"
                 android:layout_marginTop="10dp"
+                android:contentDescription="@string/selec_color"
                 app:srcCompat="@drawable/goldencolor" />
 
             <ImageButton
@@ -355,6 +389,7 @@
                 android:layout_height="26dp"
                 android:layout_marginStart="25.6dp"
                 android:layout_marginTop="10dp"
+                android:contentDescription="@string/selec_color"
                 android:background="#FFFFFF" />
 
         </LinearLayout>
@@ -371,6 +406,7 @@
                 android:layout_height="26dp"
                 android:layout_marginStart="25.6dp"
                 android:layout_marginTop="36dp"
+                android:contentDescription="@string/selec_color"
                 app:srcCompat="@drawable/browncolor" />
 
             <ImageButton
@@ -379,6 +415,7 @@
                 android:layout_height="26dp"
                 android:layout_marginStart="25.6dp"
                 android:layout_marginTop="10dp"
+                android:contentDescription="@string/selec_color"
                 android:background="@drawable/redcolor" />
 
             <ImageButton
@@ -387,6 +424,7 @@
                 android:layout_height="26dp"
                 android:layout_marginStart="25.6dp"
                 android:layout_marginTop="82dp"
+                android:contentDescription="@string/selec_color"
                 android:background="@drawable/greencolor" />
 
             <ImageButton
@@ -395,6 +433,7 @@
                 android:layout_height="26dp"
                 android:layout_marginStart="25.6dp"
                 android:layout_marginTop="10dp"
+                android:contentDescription="@string/selec_color"
                 android:background="@drawable/bluecolor" />
 
             <ImageButton
@@ -403,6 +442,7 @@
                 android:layout_height="26dp"
                 android:layout_marginStart="25.6dp"
                 android:layout_marginTop="10dp"
+                android:contentDescription="@string/selec_color"
                 android:background="@drawable/purplecolor" />
 
             <ImageButton
@@ -411,6 +451,7 @@
                 android:layout_height="26dp"
                 android:layout_marginStart="25.6dp"
                 android:layout_marginTop="10dp"
+                android:contentDescription="@string/selec_color"
                 android:background="@drawable/graycolor" />
 
             <ImageButton
@@ -419,6 +460,7 @@
                 android:layout_height="26dp"
                 android:layout_marginStart="25.6dp"
                 android:layout_marginTop="46dp"
+                android:contentDescription="@string/selec_color"
                 android:background="@drawable/goldencolor" />
 
             <ImageButton
@@ -427,8 +469,10 @@
                 android:layout_height="26dp"
                 android:layout_marginStart="25.6dp"
                 android:layout_marginTop="10dp"
+                android:contentDescription="@string/selec_color"
                 android:background="@drawable/silvercolor" />
 
         </LinearLayout>
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

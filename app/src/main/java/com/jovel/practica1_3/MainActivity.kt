@@ -1,9 +1,11 @@
 package com.jovel.practica1_3
 
+import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.jovel.practica1_3.databinding.ActivityMainBinding
-import java.lang.Math.pow
+import java.lang.Math.round
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -13,10 +15,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         mainBinding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(mainBinding.root)
-        var band1: Int = 12
-        var band2: Int = 12
-        var band3: Int = 12
-        var band4: Int = 12
+        var band1 = 12
+        var band2 = 12
+        var band3 = 12
+        var band4 = 12
 
         //BAND 1
         mainBinding.brown1ImageButton.setOnClickListener {
@@ -214,12 +216,13 @@ class MainActivity : AppCompatActivity() {
     }
 
 
+    @SuppressLint("SetTextI18n")
     private fun setResistor(band1: Int, band2: Int, band3: Int, band4: Int) {
 
-        var decenas: Int = 12
-        var unidades: Int = 12
-        var multi: Float = 12F
-        var tol: Float = 12F
+        var decenas = 12
+        var unidades = 12
+        var multi = 12F
+        var tol = 12F
 
         //BAND 1
         with(mainBinding.band1ImageView) {
@@ -321,44 +324,44 @@ class MainActivity : AppCompatActivity() {
 
                 0 -> {
                     setImageResource(R.drawable.blackcolor)
-                    multi = pow(10.toDouble(),0.toDouble()).toFloat()
+                    multi = 1.toFloat()
                 }
                 1 -> {
                     setImageResource(R.drawable.browncolor)
-                    multi = pow(10.toDouble(),1.toDouble()).toFloat()
+                    multi = 10.toFloat()
                 }
                 2 -> {
                     setImageResource(R.drawable.redcolor)
-                    multi = pow(10.toDouble(),2.toDouble()).toFloat()
+                    multi = 100.toFloat()
                 }
                 3 -> {
                     setImageResource(R.drawable.orangecolor)
-                    multi = pow(10.toDouble(),3.toDouble()).toFloat()
+                    multi = 1000.toFloat()
                 }
 
                 4 -> {
                     setImageResource(R.drawable.yellowcolor)
-                    multi = pow(10.toDouble(),4.toDouble()).toFloat()
+                    multi = 10000.toFloat()
                 }
                 5 -> {
                     setImageResource(R.drawable.greencolor)
-                    multi = pow(10.toDouble(),5.toDouble()).toFloat()
+                    multi = 100000.toFloat()
                 }
                 6 -> {
                     setImageResource(R.drawable.bluecolor)
-                    multi = pow(10.toDouble(),6.toDouble()).toFloat()
+                    multi = 1000000.toFloat()
                 }
                 7 -> {
                     setImageResource(R.drawable.purplecolor)
-                    multi = pow(10.toDouble(),7.toDouble()).toFloat()
+                    multi = 10000000.toFloat()
                 }
                 8 -> {
                     setImageResource(R.drawable.graycolor)
-                    multi = pow(10.toDouble(),9.toDouble()).toFloat()
+                    multi = 100000000.toFloat()
                 }
                 9 -> {
                     setImageResource(R.drawable.whitecolor)
-                    multi = pow(10.toDouble(),9.toDouble()).toFloat()
+                    multi = 1000000000.toFloat()
                 }
                 10 -> {
                     setImageResource(R.drawable.goldencolor)
@@ -411,8 +414,38 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+        val d = round(decenas*multi.toDouble())
+        val u = round(unidades*multi.toDouble())
+
         if (decenas != 12 && unidades != 12 && multi != 12.toFloat() && tol != 12.toFloat() ){
-            mainBinding.infoTextView.text = ((decenas.toFloat()+unidades)*multi).toString() + "Ω ± " + tol.toString() + "%"
+            var valor: Float
+            var cont=0
+
+            when {
+                (d+u) in 1000..9998 -> {
+                    valor = ((d+u).toFloat()/1000)
+                    cont+=1
+                }
+                (d+u)>9999 -> {
+                    valor = ((d+u)/1000).toFloat()
+                    cont+=1
+                }
+                else -> valor=(d+u).toFloat()
+            }
+
+            while (valor>999){
+                valor = (valor/1000)
+                cont+=1
+            }
+
+            if(multi < 1) valor= (decenas*multi+unidades*multi)
+
+            val l = arrayListOf<String>()
+            l.add("")
+            l.add("K")
+            l.add("M")
+            l.add("G")
+            mainBinding.infoTextView.text = (valor).toString() + l[cont] + "Ω ± " + tol.toString() + "%"
         }
     }
 }
