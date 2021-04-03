@@ -364,11 +364,11 @@ class MainActivity : AppCompatActivity() {
                     multi = 1000000000.toFloat()
                 }
                 10 -> {
-                    setImageResource(R.drawable.goldencolor)
+                    setImageResource(R.drawable.gold1color)
                     multi = 0.1.toFloat()
                 }
                 11 -> {
-                    setImageResource(R.drawable.silvercolor)
+                    setImageResource(R.drawable.silver1color)
                     multi = 0.01.toFloat()
                 }
             }
@@ -404,11 +404,11 @@ class MainActivity : AppCompatActivity() {
                     tol = 0.05.toFloat()
                 }
                 10 -> {
-                    setImageResource(R.drawable.goldencolor)
+                    setImageResource(R.drawable.gold1color)
                     tol = 5.toFloat()
                 }
                 11 -> {
-                    setImageResource(R.drawable.silvercolor)
+                    setImageResource(R.drawable.silver1color)
                     tol = 10.toFloat()
                 }
             }
