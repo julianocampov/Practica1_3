@@ -439,7 +439,7 @@ class MainActivity : AppCompatActivity() {
             }
 
             if(multi < 1) valor= (decenas*multi+unidades*multi)
-            //Comentario hola
+            //Comentario holabnh
             val l = arrayListOf<String>()
             l.add("")
             l.add("K")
