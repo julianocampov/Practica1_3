@@ -438,13 +438,17 @@ class MainActivity : AppCompatActivity() {
                 cont+=1
             }
 
-            if(multi < 1) valor= (decenas*multi+unidades*multi)
-            val l = arrayListOf<String>()
-            l.add("")
-            l.add("K")
-            l.add("M")
-            l.add("G")
-            mainBinding.infoTextView.text = (valor).toString() + l[cont] + "Ω ± " + tol.toString() + "%"
+            if(multi < 1) {
+                valor = (decenas*multi+unidades*multi)
+                valor = toFourDigits(valor)
+            }
+            val lista = arrayListOf<String>()
+            lista.add("")
+            lista.add("K")
+            lista.add("M")
+            lista.add("G")
+
+            mainBinding.infoTextView.text = (valor).toString() + lista[cont] + "Ω ± " + tol.toString() + "%"
         }
     }
 }
